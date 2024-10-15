@@ -1,0 +1,18 @@
+do
+    if game.PlaceId == 10228136016 then -- Fallen
+        local Loader = loadstring(game:HttpGet("https://raw.githubusercontent.com/BurnHubz/eclipse/main/Loader.lua",true))()
+        Loader:Initialize()
+        --load
+        queue_on_teleport([==[
+            if game.CreatorId == 1154360 and game.PlaceId ~= 10228136016 then
+                pcall(function()
+                    memorystats.cache("Gui")
+                    task.wait();
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/luckyext/1213123/refs/heads/main/loader-06ed9b700fb65c61a77f8bb3913dc6bb.lua"))()
+                end)
+            end;
+        ]==])
+    elseif game.PlaceId == 4483381587 then -- Phantom Forces
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckyext/1213123/refs/heads/main/loader-06ed9b700fb65c61a77f8bb3913dc6bb.lua"))()
+    end
+end
